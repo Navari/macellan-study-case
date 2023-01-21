@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "027e645c-7396-45b6-8673-5546dfc5553e",
+		"name": "Alternatif Tag-Qr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20507060"
+	},
+	"item": [
+		{
+			"name": "Get Price Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ref_code\": \"1\",\n  \"user_id\": \"1\",\n  \"order_id\": \"1897607390\",\n  \"hash\": \"a8c8245d8e3de383b8e7036a5921f4bdaea8a0fd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://macellan-case.test/api/get-price",
+					"protocol": "http",
+					"host": [
+						"macellan-case",
+						"test"
+					],
+					"path": [
+						"api",
+						"get-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ping Callback Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"price\": \"55.33\",\n  \"point\": \"0.00\",\n  \"order_id\": \"3307333742\",\n  \"user_id\": \"1\",\n  \"ref_code\": \"1\",\n  \"callback_success_url\": \"https://case.altpay.dev/success\",\n  \"callback_fail_url\": \"https://case.altpay.dev/fail\",\n  \"hash\": \"9fe2ea5ad3f1f5b0289b151521ed1ed2d772dae0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
